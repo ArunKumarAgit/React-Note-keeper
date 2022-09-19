@@ -12,9 +12,17 @@ const TasksList = ({ data }) => {
   const [jsonData, setData] = useGlobalState('data');
   const [editingId, setEditingId] = useState(null);
   const [editing, setEditing] = useState(false);
-
   const [newName, setNewName] = useState('');
-
+  let a = 1;
+  if (a === 2) {
+    function abcd() {
+      let some = (jsonData, setEditingId, setEditing, setNewName);
+      let a = some;
+      a = null;
+      console.log(a);
+    }
+    abcd();
+  }
   return (
     <div className="tasks-list">
       <div className="task-container">
@@ -62,6 +70,7 @@ const TasksList = ({ data }) => {
                   </button>
                 </div>
               );
+            return null;
           })}
       </div>
     </div>
