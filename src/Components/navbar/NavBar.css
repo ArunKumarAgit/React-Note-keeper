@@ -1,0 +1,77 @@
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: hsla(185, 64%, 51%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(185, 64%, 51%, 1) 0%,
+    hsla(277, 74%, 24%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(185, 64%, 51%, 1) 0%,
+    hsla(277, 74%, 24%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(185, 64%, 51%, 1) 0%,
+    hsla(277, 74%, 24%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#30C5D2", endColorstr="#471069", GradientType=1 );
+}
+
+.li {
+  float: left;
+}
+
+.li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li a:hover:not(.active) {
+  background-color: #111;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #ffffff;
+}
+.floatRight {
+  float: right;
+}
+
+.floatRight a {
+  background: hsla(212, 35%, 58%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(212, 35%, 58%, 1) 0%,
+    hsla(218, 32%, 80%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(212, 35%, 58%, 1) 0%,
+    hsla(218, 32%, 80%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(212, 35%, 58%, 1) 0%,
+    hsla(218, 32%, 80%, 1) 100%
+  );
+}
