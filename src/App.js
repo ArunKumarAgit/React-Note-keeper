@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import NavBar from './Components/navbar/NavBar';
 import TasksList from './Components/TasksList';
@@ -61,9 +61,9 @@ function App() {
   const [data, setData] = useGlobalState('data');
   const [body, setBody] = useState('');
 
-  useEffect(() => {
-    setData(getTasks());
-  }, []);
+  // useEffect(() => {
+  //   setData(getTasks());
+  // }, []);
 
   const addTask = (name, body, datetime, iscompleted, token) => {
     checkTasks();
